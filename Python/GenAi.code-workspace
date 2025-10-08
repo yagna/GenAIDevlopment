@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"name": "whatsapp-n8n-bundle",
+			"path": "../../AI accelerator hub/whatsapp-n8n-bundle"
+		},
+		{
+			"name": "PythonFoundations",
+			"path": "../PythonFoundations"
+		},
+		{
+			"name": "whatsapp_contact_sync",
+			"path": "../../AI accelerator hub/whatsapp_contact_sync"
+		},
+		{
+			"name": "coaching-sync-app",
+			"path": "../../Nocode_Repos/coaching-sync-app"
+		},
+		{
+			"name": "GenAIDevlopment",
+			"path": "../GenAIDevlopment"
+		},
+		{
+			"name": "Python",
+			"path": "."
+		}
+	],
+	"settings": {
+		"powershell.cwd": "Python"
+	}
+}
