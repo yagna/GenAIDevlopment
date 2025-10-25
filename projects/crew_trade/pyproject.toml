@@ -1,0 +1,47 @@
+[project]
+name = "crew-trade"
+version = "1.0.0"
+description = "Crew AI application for trade signals from Telegram"
+readme = "README.md"
+authors = [
+    { name = "yagna", email = "yagna247@gmail.com" }
+]
+requires-python = ">=3.12"
+
+# Core dependencies
+dependencies = [
+    "fastapi>=0.110.0,<1.0.0",
+    "uvicorn>=0.23.2,<1.0.0",
+    "aiohttp>=3.8.1,<4.0.0",
+    "python-dotenv",
+    "fyers-apiv3",
+    "python-telegram-bot>=21.0,<22.0",
+    "crewai>=0.25.0,<1.0.0",
+    "litellm>=1.40.0,<2.0.0",
+    "langchain>=0.2.0,<1.0.0",
+    "uvloop>=0.17.0,<1.0.0; sys_platform != 'win32'"
+]
+
+
+[project.scripts]
+crew-trade = "src.main:app"  # ✅ assuming your FastAPI app is in src/main.py and variable name is 'app'
+
+[build-system]
+requires = ["uv_build>=0.8.8,<0.9.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+    "black",
+    "ruff",
+    "mypy",
+    "httpx"
+]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests"
+]
