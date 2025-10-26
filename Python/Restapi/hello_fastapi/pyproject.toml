@@ -1,12 +1,9 @@
 [project]
-name = "basic"
+name = "hello-fastapi"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "dotenv>=0.9.9",
-    "langchain-openai>=1.0.0",
-    "langchain[google-vertexai]>=1.0.0",
-    "langgraph>=1.0.0",
+    "fastapi[standard]>=0.120.0",
 ]

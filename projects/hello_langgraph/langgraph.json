@@ -1,0 +1,8 @@
+{
+    "dependencies": ".",
+    "graphs": {
+        "main": "main:graph",
+        "calc": "calc:graph"
+    }
+
+}
