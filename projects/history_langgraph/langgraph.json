@@ -1,7 +1,7 @@
 {
     "dependencies": ".",
     "graphs": {
-        "history": "history:graph"
+        "historic_events_by_date": "historic_events_by_date:graph"
     }
     
 }

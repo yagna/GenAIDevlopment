@@ -5,8 +5,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langgraph.graph import START, END, StateGraph
 import os
 
-class HistoryState(TypedDict):
-    event: str
+class HistoryStateByDate(TypedDict):
     date: str
     desc: str
 
@@ -17,24 +16,23 @@ llm = init_chat_model(model=model_name, model_provider=model_provider)
 
 
 
-def historic_events_by_date(state: HistoryState) -> HistoryState:
+def historic_events_by_date(state: HistoryStateByDate) -> HistoryStateByDate:
     desc = state['desc']
     date = state['date']
-    event = state['event']
     
     prompt = ChatPromptTemplate([
-        ('system', 'You are an expert Historian  good with date'),
-        ("user", f"Consider the following date  {date} find 10 historic events on date step by step"),
-        ("user", f"List down all the events  {event}")
+        ('system', 'You are a historian good with dates'),
+        ("user", "Given the  {date} "),
+        ("user", "Find atleast 10 historic events which signify the date")
     ])
     chain = prompt | llm 
-    response = chain.invoke({'desc': desc, 'event': event})
+    response = chain.invoke({'date': date})
     state['desc'] = response.content
     return state
 
-toner_graph = StateGraph(HistoryState)
-toner_graph.add_node("historic_events_by_date", historic_events_by_date)
-toner_graph.add_edge(START, "historic_events_by_date")
-toner_graph.add_edge("historic_events_by_date", END)
+history_graph = StateGraph(HistoryStateByDate)
+history_graph.add_node("historic_events_by_date", historic_events_by_date)
+history_graph.add_edge(START, "historic_events_by_date")
+history_graph.add_edge("historic_events_by_date", END)
 
-graph = toner_graph.compile()
+graph = history_graph.compile()

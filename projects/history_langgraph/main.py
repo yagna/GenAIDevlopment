@@ -1,17 +1,21 @@
 from dotenv import load_dotenv
 import os
-from langchain.
+from history import graph,HistoryStateByDate
+from langgraph.graph import START, END, StateGraph
+
 
 def main():
     print(os.getenv('LANGSMITH_MYKEY', 'NO KEY FOUND'))
     load_dotenv()
     print(os.getenv('LANGSMITH_MYKEY','NO KEY FOUND'))
-    state = (
-        draft='we will provide the date as input and coud you please get the history even for the date.',
-        tone='formal'
-    )
+    state = HistoryStateByDate(
+       
+           date='14-aug-1947',
+           desc=''
+       
+   )
     response = graph.invoke(state)
-    print(response['mail'])
+    print(response['desc'])
 
 
 

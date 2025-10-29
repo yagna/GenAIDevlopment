@@ -19,7 +19,8 @@ dependencies = [
     "crewai>=0.25.0,<1.0.0",
     "litellm>=1.40.0,<2.0.0",
     "langchain>=0.2.0,<1.0.0",
-    "uvloop>=0.17.0,<1.0.0; sys_platform != 'win32'"
+    "uvloop>=0.17.0,<1.0.0; sys_platform != 'win32'",
+    "dotenv>=0.9.9",
 ]
 
 

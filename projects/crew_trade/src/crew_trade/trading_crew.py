@@ -1,8 +1,8 @@
 from crewai import Crew, Task
-from src.crew_trade.signal_agent import SignalAgent
-from src.crew_trade.execution_agent import ExecutionAgent
-from src.crew_trade.notifier_agent import NotifierAgent
-from src.crew_trade.strategist_agent import StrategistAgent
+from crew_trade.signal_agent import SignalAgent
+from crew_trade.execution_agent import ExecutionAgent
+from crew_trade.notifier_agent import NotifierAgent
+from crew_trade.strategist_agent  import StrategistAgent
 
 # Define the tasks
 signal_task = Task(

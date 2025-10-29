@@ -1,6 +1,7 @@
 from typing import Union
 
 from fastapi import FastAPI
+from pydantic import BaseModel
 
 app = FastAPI(
         title="hello Library",
@@ -9,9 +10,12 @@ app = FastAPI(
 
     )
 
-@app.get("/")
-def greet() -> str:
-     return {"Hello": "World"}
+class SuccessMessage(BaseModel):
+    Message: str
+
+@app.get("/",response_model=SuccessMessage)
+async def greet():
+     return {"Message":"Hello World"}
 
 
 #if __name__ == "__main__":
