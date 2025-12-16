@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "hello-mcp": {
+      "command": "uv",
+      "args": [
+        "run",
+        "E:\\AIdevloper-classnotes\\GenAIDevlopment\\projects\\AgenticAI-MCP\\hello_mcp\\.venv\\Scripts\\python.exe",
+        "E:\\AIdevloper-classnotes\\GenAIDevlopment\\projects\\AgenticAI-MCP\\hello_mcp\\src\\hello.py"
+      ],
+      "cwd": "E:\\AIdevloper-classnotes\\GenAIDevlopment\\projects\\AgenticAI-MCP\\hello_mcp"
+    }
+  }
+}

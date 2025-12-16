@@ -1,0 +1,23 @@
+[project]
+name = "moviesinfo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "yagna", email = "yagna247@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "asyncpg>=0.30.0",
+    "fastapi[standard]>=0.121.0",
+    "python-dotenv>=1.2.1",
+    "sqlalchemy>=2.0.44",
+    "uvicorn>=0.38.0",
+]
+
+[project.scripts]
+moviesinfo = "moviesinfo:main"
+
+[build-system]
+requires = ["uv_build>=0.9.3,<0.10.0"]
+build-backend = "uv_build"

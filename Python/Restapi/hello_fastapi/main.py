@@ -17,6 +17,9 @@ class SuccessMessage(BaseModel):
 async def greet():
      return {"Message":"Hello World"}
 
+async def books():
+     return books
+
 
 #if __name__ == "__main__":
 #    main()

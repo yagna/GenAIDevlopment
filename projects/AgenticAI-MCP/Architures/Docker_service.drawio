@@ -1,0 +1,31 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.8 Chrome/140.0.7339.240 Electron/38.4.0 Safari/537.36" version="28.2.8">
+  <diagram name="Page-1" id="3uV8eVKb2oaqUS_moaSV">
+    <mxGraphModel dx="1028" dy="595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2ldiz7CqUlV3Xb_JgHsi-2" value="" style="image;html=1;image=img/lib/clip_art/computers/Server_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="230" y="360" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2ldiz7CqUlV3Xb_JgHsi-3" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Docker.svg;" vertex="1" parent="1">
+          <mxGeometry x="245" y="280" width="50" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="2ldiz7CqUlV3Xb_JgHsi-4" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Docker.svg;" vertex="1" parent="1">
+          <mxGeometry x="440" y="290" width="50" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="2ldiz7CqUlV3Xb_JgHsi-6" value="" style="image;html=1;image=img/lib/clip_art/computers/Laptop_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="425" y="360" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2ldiz7CqUlV3Xb_JgHsi-7" value="www.lenskart.com" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/DNS.svg;" vertex="1" parent="1">
+          <mxGeometry x="100" y="40" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="2ldiz7CqUlV3Xb_JgHsi-8" value="www.teachers kart.com" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/DNS.svg;" vertex="1" parent="1">
+          <mxGeometry x="350" y="50" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="2ldiz7CqUlV3Xb_JgHsi-13" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.operating_system_image;" vertex="1" parent="1">
+          <mxGeometry x="195" y="180" width="50" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
